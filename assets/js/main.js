@@ -36,7 +36,7 @@ function renderCafe(doc) {
 };
 
 
-db.collection('cafes').where('city', '==', 'Lekki').get().then(snapshot => {//getting data
+db.collection('cafes').where('city', '==', 'london').orderBy('name').get().then(snapshot => {//getting data
     snapshot.docs.forEach(doc => {
         renderCafe(doc);//passing document details to the frontend
     });
