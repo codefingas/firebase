@@ -15,7 +15,7 @@ h1 {
     background: #fff;
     max-width: 960px;
     margin: 30px auto;
-    padding: 20px 30px;
+    padding: 20px 30pCx;
     border-radius: 10px 120px 10px 10px;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 }
@@ -61,6 +61,19 @@ li div {
     padding: 10px 0;
     font-weight: bold;
     cursor: pointer;
+}
+
+form input {
+    float: left;
+    width: 35%;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #eee;
+    margin: 0 1%;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    font-size: 18px;
 }
 
 form input:focus{
