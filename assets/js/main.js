@@ -36,10 +36,10 @@ function renderCafe(doc) {
 };
 
 
-db.collection('cafes').get().then(snapshot => {//getting data
+db.collection('cafes').where('city', '==', 'Lekki').get().then(snapshot => {//getting data
     snapshot.docs.forEach(doc => {
         renderCafe(doc);//passing document details to the frontend
-    })
+    });
 });
 
 /**saving data */
